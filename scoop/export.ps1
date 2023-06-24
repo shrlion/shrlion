@@ -1,1 +1,1 @@
-scoop.cmd export > app_list.txt
+scoop export > app_list.txt
