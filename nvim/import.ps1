@@ -1,1 +1,1 @@
-mv -force init.lua ~/appdata/local/nvim
+cp  nvim/* ~/appdata/local/nvim/
