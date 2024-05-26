@@ -1,2 +1,3 @@
-if (test-path ./nvim/*){rmdir ./nvim/*}
-cp ~/AppData/Local/nvim/*  nvim/
+if (test-path ./nvim/*){rmdir -force ./nvim}
+cp  ~/AppData/Local/nvim nvim/ -recurse -force
+
