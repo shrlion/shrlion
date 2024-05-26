@@ -1,14 +1,13 @@
 local wezterm = require("wezterm")
 local mux = wezterm.mux
-local dimmer = { brightness = 0.1 }
 
 local config = {
-	color_scheme = "Dracula (Official)",
+	color_scheme = "Dracula",
 	use_fancy_tab_bar = true,
 	window_decorations = "RESIZE",
-	hide_mouse_cursor_when_typing = false,
+	hide_mouse_cursor_when_typing = true,
 	warn_about_missing_glyphs = false,
-	window_background_opacity = 1.0,
+	window_background_opacity = 0.8,
 }
 
 config.font = wezterm.font_with_fallback({
@@ -22,14 +21,18 @@ config.background = {
 		source = {
 			File = wezterm.config_dir .. "/background-image.jpg",
 		},
-		hsb = dimmer,
+		hsb = {
+      hue = 1.0,
+      saturation = 1.5,
+      brightness = 0.45,
+    },
 		horizontal_align = "Center",
 		attachment = "Fixed",
 		repeat_x = "NoRepeat",
 		width = "Cover",
 		repeat_y = "NoRepeat",
 		height = "Cover",
-		opacity = 0.95,
+		opacity = 1.0,
 	},
 }
 
